@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodrecipe/widgets/review.dart';
 import 'widgets/navigation.dart';
 import 'widgets/ingredient-info.dart';
 
@@ -39,7 +40,8 @@ class MyHomePage extends StatelessWidget {
             children: [
               // NavigationSection(),
               IngredientTitle(title: 'How to make french toast'),
-              IngredientImage(imageSrc: 'assets/french_toast.png')
+              IngredientImage(imageSrc: 'assets/french_toast.png'),
+              ReviewSection(rating: '4,5', reviews: 300)
             ],
           ),
         ));
