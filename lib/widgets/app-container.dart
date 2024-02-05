@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppContainer extends StatelessWidget {
   const AppContainer(
-      {super.key, required this.child, this.top = 16.0, this.bottom = 16.0});
+      {super.key, required this.child, this.top = 0.0, this.bottom = 0.0});
 
   final Widget child;
   final double top;
