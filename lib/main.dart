@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'widgets/navigation.dart';
+import 'widgets/ingredient-info.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: '',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -26,10 +28,20 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Column(
-        children: [NavigationSection()],
-      ),
-    );
+    return Scaffold(
+        appBar: AppBar(
+          actions: const [NavigationSection()],
+          backgroundColor: Colors.white,
+        ),
+        backgroundColor: Colors.white,
+        body: const SingleChildScrollView(
+          child: Column(
+            children: [
+              // NavigationSection(),
+              IngredientTitle(title: 'How to make french toast'),
+              IngredientImage(imageSrc: 'assets/french_toast.png')
+            ],
+          ),
+        ));
   }
 }
