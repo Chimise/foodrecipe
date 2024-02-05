@@ -14,7 +14,7 @@ class IngredientTitle extends StatelessWidget {
         softWrap: true,
         style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 24.0,
+            fontSize: 25.0,
             color: Colors.grey[900]),
       ),
     );

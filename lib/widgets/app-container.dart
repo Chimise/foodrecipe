@@ -12,7 +12,7 @@ class AppContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding:
-          EdgeInsets.only(left: 32.0, right: 32.0, top: top, bottom: bottom),
+          EdgeInsets.only(left: 16.0, right: 16.0, top: top, bottom: bottom),
       child: child,
     );
   }
