@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foodrecipe/widgets/review.dart';
 import 'widgets/navigation.dart';
 import 'widgets/ingredient-info.dart';
+import 'widgets/author-info.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +42,11 @@ class MyHomePage extends StatelessWidget {
               // NavigationSection(),
               IngredientTitle(title: 'How to make french toast'),
               IngredientImage(imageSrc: 'assets/french_toast.png'),
-              ReviewSection(rating: '4,5', reviews: 300)
+              ReviewSection(rating: '4,5', reviews: 300),
+              AuthorInfo(
+                  profilePic: 'assets/user-profile.png',
+                  location: 'Bali, Indonesia',
+                  name: 'Roberta Anny')
             ],
           ),
         ));
