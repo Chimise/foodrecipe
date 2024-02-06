@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'app-container.dart';
 
-class IngredientTitle extends StatelessWidget {
-  const IngredientTitle({super.key, required this.title});
+class MealTitle extends StatelessWidget {
+  const MealTitle({super.key, required this.title});
 
   final String title;
 
@@ -21,8 +21,8 @@ class IngredientTitle extends StatelessWidget {
   }
 }
 
-class IngredientImage extends StatelessWidget {
-  const IngredientImage({super.key, required this.imageSrc});
+class MealImage extends StatelessWidget {
+  const MealImage({super.key, required this.imageSrc});
 
   final String imageSrc;
 
