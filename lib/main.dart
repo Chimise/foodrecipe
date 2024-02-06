@@ -3,9 +3,9 @@ import 'package:foodrecipe/data/ingredients.dart';
 import 'package:foodrecipe/widgets/review.dart';
 import 'package:foodrecipe/models/ingredient.dart';
 import 'package:foodrecipe/widgets/ingredients.dart';
-import 'widgets/navigation.dart';
-import 'widgets/meal-info.dart';
-import 'widgets/author-info.dart';
+import 'package:foodrecipe/widgets/navigation.dart';
+import 'package:foodrecipe/widgets/meal-info.dart';
+import 'package:foodrecipe/widgets/author-info.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,6 +50,7 @@ class MyHomePage extends StatelessWidget {
                   profilePic: 'assets/user-profile.png',
                   location: 'Bali, Indonesia',
                   name: 'Roberta Anny'),
+              IngredientsList(ingredients: dummyIngredients),
             ],
           ),
         ));
