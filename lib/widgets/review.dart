@@ -27,14 +27,15 @@ class ReviewSection extends StatelessWidget {
               padding: const EdgeInsets.only(left: 5.0),
               child: Text(
                 rating,
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                    fontWeight: FontWeight.bold, fontSize: 12.0),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
               child: Text(
                 '($displayReviews)',
-                style: TextStyle(color: Colors.grey[500]),
+                style: TextStyle(color: Colors.grey[500], fontSize: 12.0),
               ),
             )
           ],
