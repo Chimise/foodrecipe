@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'app-container.dart';
+import 'package:foodrecipe/widgets/app-container.dart';
 
 class AuthorInfo extends StatelessWidget {
   const AuthorInfo(
