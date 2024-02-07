@@ -30,9 +30,12 @@ class IngredientsList extends StatelessWidget {
                   const Text(
                     'Ingredients',
                     style:
-                        TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
                   ),
-                  Text(totalIngredients)
+                  Text(
+                    totalIngredients,
+                    style: TextStyle(color: Colors.grey[500], fontSize: 14.0),
+                  )
                 ],
               )),
         ),
@@ -80,10 +83,14 @@ class IngredientItem extends StatelessWidget {
           IngredientImage(src: image),
           Expanded(
               child: Padding(
-            padding: const EdgeInsets.only(left: 5.0),
-            child: Text(name),
+            padding: const EdgeInsets.only(left: 14.0),
+            child: Text(
+              name,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
           )),
-          Text(quantity)
+          Text(quantity,
+              style: TextStyle(fontSize: 12.0, color: Colors.grey[500]))
         ],
       ),
     );
@@ -99,9 +106,13 @@ class IngredientImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(5.0)),
-      padding: const EdgeInsets.all(5.0),
-      child: Image.asset(src),
+          color: Colors.white, borderRadius: BorderRadius.circular(8.0)),
+      padding: const EdgeInsets.all(8.0),
+      child: Image.asset(
+        src,
+        width: 26.0,
+        height: 26.0,
+      ),
     );
   }
 }
