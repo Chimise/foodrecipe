@@ -40,7 +40,8 @@ class AuthorInfo extends StatelessWidget {
                           padding: const EdgeInsets.only(left: 5.0),
                           child: Text(
                             location,
-                            style: TextStyle(color: Colors.grey[500]),
+                            style: TextStyle(
+                                color: Theme.of(context).primaryColorLight),
                           ),
                         )
                       ],
@@ -50,7 +51,7 @@ class AuthorInfo extends StatelessWidget {
             ElevatedButton(
                 onPressed: onFollow,
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.red,
+                    backgroundColor: Theme.of(context).primaryColor,
                     padding: const EdgeInsets.symmetric(
                         horizontal: 16.0, vertical: 8.0),
                     minimumSize: const Size(60, 30),

@@ -20,9 +20,14 @@ class MyApp extends StatelessWidget {
       title: '',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+          colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFE23E3E)),
+          useMaterial3: true,
+          primaryColor: const Color(0xFFE23E3E),
+          primaryColorDark: Colors.black,
+          primaryColorLight: const Color(0x65303030),
+          cardColor: const Color(0x35A9A9A9),
+          fontFamily: 'Poppins',
+          fontFamilyFallback: const ['Times New Roman', 'Sanserif']),
       home: const MyHomePage(),
     );
   }

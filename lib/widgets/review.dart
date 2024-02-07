@@ -20,7 +20,7 @@ class ReviewSection extends StatelessWidget {
           children: [
             Icon(
               Icons.star,
-              color: Colors.orange[600],
+              color: Theme.of(context).primaryColor,
               size: 15,
             ),
             Padding(
@@ -35,7 +35,8 @@ class ReviewSection extends StatelessWidget {
               padding: const EdgeInsets.only(left: 8.0),
               child: Text(
                 '($displayReviews)',
-                style: TextStyle(color: Colors.grey[500], fontSize: 12.0),
+                style: TextStyle(
+                    color: Theme.of(context).primaryColorLight, fontSize: 12.0),
               ),
             )
           ],

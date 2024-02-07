@@ -34,7 +34,9 @@ class IngredientsList extends StatelessWidget {
                   ),
                   Text(
                     totalIngredients,
-                    style: TextStyle(color: Colors.grey[500], fontSize: 14.0),
+                    style: TextStyle(
+                        color: Theme.of(context).primaryColorLight,
+                        fontSize: 14.0),
                   )
                 ],
               )),
@@ -73,7 +75,7 @@ class IngredientItem extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        color: Colors.grey[200],
+        color: Theme.of(context).cardColor,
       ),
       margin: const EdgeInsets.only(bottom: 12.0),
       padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12.0),
@@ -90,7 +92,8 @@ class IngredientItem extends StatelessWidget {
             ),
           )),
           Text(quantity,
-              style: TextStyle(fontSize: 12.0, color: Colors.grey[500]))
+              style: TextStyle(
+                  fontSize: 12.0, color: Theme.of(context).primaryColorLight))
         ],
       ),
     );
