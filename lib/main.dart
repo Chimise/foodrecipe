@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodrecipe/data/ingredients.dart';
 import 'package:foodrecipe/widgets/review.dart';
-import 'package:foodrecipe/models/ingredient.dart';
 import 'package:foodrecipe/widgets/ingredients.dart';
 import 'package:foodrecipe/widgets/navigation.dart';
 import 'package:foodrecipe/widgets/meal-info.dart';
