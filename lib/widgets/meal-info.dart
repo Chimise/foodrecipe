@@ -14,7 +14,7 @@ class MealTitle extends StatelessWidget {
         softWrap: true,
         style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 25.0,
+            fontSize: 22.0,
             color: Colors.grey[900]),
       ),
     );

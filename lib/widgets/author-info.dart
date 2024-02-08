@@ -31,7 +31,8 @@ class AuthorInfo extends StatelessWidget {
                   children: [
                     Text(
                       name,
-                      style: const TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 14.0),
                     ),
                     Row(
                       children: [
@@ -41,7 +42,8 @@ class AuthorInfo extends StatelessWidget {
                           child: Text(
                             location,
                             style: TextStyle(
-                                color: Theme.of(context).primaryColorLight),
+                                color: Theme.of(context).primaryColorLight,
+                                fontSize: 12.0),
                           ),
                         )
                       ],
@@ -53,13 +55,13 @@ class AuthorInfo extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Theme.of(context).primaryColor,
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 16.0, vertical: 8.0),
+                        horizontal: 16.0, vertical: 6.0),
                     minimumSize: const Size(60, 30),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0))),
                 child: const Text(
                   'Follow',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 14.0),
                 ))
           ],
         ));

@@ -20,7 +20,7 @@ class ReviewSection extends StatelessWidget {
           children: [
             Icon(
               Icons.star,
-              color: Theme.of(context).primaryColor,
+              color: Colors.orange[600],
               size: 15,
             ),
             Padding(

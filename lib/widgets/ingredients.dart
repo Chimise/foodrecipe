@@ -36,7 +36,7 @@ class IngredientsList extends StatelessWidget {
                     totalIngredients,
                     style: TextStyle(
                         color: Theme.of(context).primaryColorLight,
-                        fontSize: 14.0),
+                        fontSize: 12.0),
                   )
                 ],
               )),
