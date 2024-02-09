@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodrecipe/data/ingredients.dart';
-import 'package:foodrecipe/widgets/review.dart';
-import 'package:foodrecipe/widgets/ingredients.dart';
-import 'package:foodrecipe/widgets/navigation.dart';
-import 'package:foodrecipe/widgets/meal-info.dart';
-import 'package:foodrecipe/widgets/author-info.dart';
+import 'package:foodrecipe/screens/meal-details.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,36 +22,7 @@ class MyApp extends StatelessWidget {
           cardColor: const Color(0x35A9A9A9),
           fontFamily: 'Poppins',
           fontFamilyFallback: const ['Times New Roman', 'Sanserif']),
-      home: const MyHomePage(),
+      home: const MealDetailsPage(),
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          actions: const [NavigationSection()],
-          backgroundColor: Colors.white,
-        ),
-        backgroundColor: Colors.white,
-        body: const SingleChildScrollView(
-          child: Column(
-            children: [
-              // NavigationSection(),
-              MealTitle(title: 'How to make french toast'),
-              MealImage(imageSrc: 'assets/french_toast.png'),
-              ReviewSection(rating: '4,5', reviews: 300),
-              AuthorInfo(
-                  profilePic: 'assets/user-profile.png',
-                  location: 'Bali, Indonesia',
-                  name: 'Roberta Anny'),
-              IngredientsList(ingredients: dummyIngredients),
-            ],
-          ),
-        ));
   }
 }
