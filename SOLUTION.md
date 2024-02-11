@@ -6,9 +6,9 @@ A simple flutter project with only the meal details screen aimed at understandin
 
 ## Project Structure
 
-The libs folder contains all flutter related codes. The project follows a component based approach breaking down reusable widgets as a standalone widget which can be found in the `widgets` folder. The `screens` folders contains the home screen and any other screen that will be added into the application.
+The `libs` folder contains all flutter related codes. The project follows a component based approach breaking down reusable widgets as a standalone widget which can be found in the `widgets` folder. The `screens` folders contains the home screen and any other screen that will be added into the application.
 
-Dummy data and models are stored inside the `data` and `models` folder respectively. The entry file for the application is the `main.dart` file.
+Dummy data and models are stored inside the `data` and `models` folders respectively. The entry file for the application is the `main.dart` file.
 
 ## Screenshot
 
